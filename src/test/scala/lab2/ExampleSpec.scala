@@ -1,4 +1,6 @@
-import HighOrderFunctions._
+package lab2
+import lab2.HighOrderFunctions._
+
 import org.scalatest.{FunSpec, Matchers}
 
 class ExampleSpec extends FunSpec with Matchers {

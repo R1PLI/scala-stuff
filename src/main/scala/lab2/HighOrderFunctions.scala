@@ -1,3 +1,5 @@
+package lab2
+
 import scala.math.{pow, sqrt}
 
 object HighOrderFunctions {
