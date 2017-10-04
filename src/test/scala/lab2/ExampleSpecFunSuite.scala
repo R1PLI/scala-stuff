@@ -46,4 +46,22 @@ class ExampleSpecFunSuite extends FunSuite with Matchers {
     val result = sortByDescending(List("hi", "hello", "greetings"))
     assert(result == List("greetings", "hello", "hi"))
   }
+
+  test("Method should return even number from list") {
+    val list = List(1, 2, 3, 4, 5, 6)
+
+    def isEven(x: Int): Boolean = x % 2 == 0
+
+    val result = findNumericSublistByPredicate(list, isEven)
+    assert(result == List(2, 4, 6))
+  }
+
+  test("Method should return odd values from list") {
+    val list = List(1, 2, 3, 4, 5, 6)
+
+    def isOdd(x: Int): Boolean = x % 2 != 0
+
+    val result = findNumericSublistByPredicate(list, isOdd)
+    assert(result == List(1,3,5))
+  }
 }
