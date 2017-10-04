@@ -32,6 +32,7 @@ object HighOrderFunctions {
   //exercise 4
   def sortByDescending(list: List[String]): List[Any] = list sortBy (-_.length)
 
+  //exercise 6
   def findNumericSublistByPredicate(list: List[Int], predicate: Int => Boolean ) : List[Int] = {
     list filter predicate
   }
